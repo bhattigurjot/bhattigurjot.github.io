@@ -65,7 +65,7 @@ h1 {
 }
 
 .me-img {
-    background: url(https://placehold.co/400) no-repeat center center;
+    background: url(avatar.png) no-repeat center center;
     background-size: 100%;
     background-position: 0px;
     border-radius: 100%;
@@ -98,6 +98,26 @@ h1 {
 .name-hero .name-text {
     margin: 0 auto;
     width: 85%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #000;
+}
+
+.social-icons a:hover {
+    color: #0073b1;
+}
+
+.social-icons i {
+    font-size: 1.5em;
 }
 
 .inner {
