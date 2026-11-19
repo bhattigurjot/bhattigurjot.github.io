@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gurjot Bhatti | bhattigurjot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic|Open+Sans:300,400,500,700|Waiting+for+the+Sunrise|Shadows+Into+Light"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
-      type="text/css"
     />
     <link
       rel="stylesheet"
@@ -17,8 +18,18 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
+    <button
+      id="theme-toggle"
+      class="theme-toggle-btn"
+      type="button"
+      aria-label="Toggle theme"
+      title="Toggle color theme"
+    >
+      <i class="fas fa-moon" id="theme-toggle-icon"></i>
+    </button>
+
     <div class="wrapper clearfix">
-      <div class="left">
+      <header class="left">
         <div class="name-hero">
           <div class="me-img"></div>
 
@@ -31,94 +42,147 @@
             <a
               href="https://www.linkedin.com/in/gurjot-singh-bhatti/"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn Profile"
+              title="LinkedIn"
             >
               <i class="fab fa-linkedin"></i>
             </a>
-            <a href="https://github.com/bhattigurjot" target="_blank">
+            <a
+              href="https://github.com/bhattigurjot"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub Profile"
+              title="GitHub"
+            >
               <i class="fab fa-github"></i>
             </a>
-            <a href="mailto:bhattigurjot@gmail.com" target="_blank">
+            <a
+              href="mailto:bhattigurjot@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Send Email"
+              title="Email"
+            >
               <i class="fas fa-envelope"></i>
             </a>
           </div>
         </div>
-      </div>
-      <div class="right">
+      </header>
+
+      <main class="right">
         <div class="inner">
-          <section>
+          <section id="employment">
             <h1>Employment</h1>
-            <p>
-              October 2023 - Present
-              <em>
-                | Luxsonic Technologies Inc. | Head of Software & Lead Software
-                Developer</em
-              >
-            </p>
-            <ul class="emp-list">
-              <li>
-                Team lead for the development of high-quality virtual reality
-                applications for medical training and assessment targeting VR
-                devices such as Meta and HTC headsets.
-              </li>
-              <li>
-                Currently oversee the development of cutting edge radiology
-                spatial application on VisionOS for Apple Vision Pro, combining
-                SwiftUI and Metal programming expertise to deliver exceptional
-                user experiences.
-              </li>
-              <li>
-                Designed and developed AI based DICOM orchestrating platform
-                that leverages machine learning models to improve clinical
-                workflows and diagnostic accuracy.
-              </li>
-              <li>
-                Led high-performing development team, driving talent growth and
-                process improvement through mentorship and collaborative
-                decision-making. This fostered a culture of innovation,
-                resulting in exceptional product outcomes and customer
-                satisfaction.
-              </li>
-            </ul>
-            <p>
-              February 2019 - October 2023
-              <em>
-                | Luxsonic Technologies Inc. | Software Developer (Virtual
-                Reality)</em
-              >
-            </p>
-            <ul class="emp-list">
-              <li>
-                Designed and developed virtual reality software applications in
-                Unity with C# and ShaderLab to support medical training and
-                assessment for a range of VR devices, including Oculus Rift,
-                Oculus Rift S, Oculus Go, HTC VIVE Focus, HTC VIVE Focus 3, HP
-                Reverb G2 and Varjo.
-              </li>
-              <li>
-                Led the development of CaregiVR, a comprehensive full-stack
-                virtual reality training and assessment platform that integrates
-                seamlessly with web components using Reactjs and Graphql,
-                leveraging AWS services for scalable infrastructure and
-                real-time data processing.
-              </li>
-            </ul>
-            <p>
-              September 2016 - December 2021
-              <em>
-                | University of Saskatchewan | Research Student (HCI Lab)</em
-              >
-            </p>
-            <ul class="emp-list">
-              <li>
-                Conducted human-computer interaction research projects and
-                authored a thesis, "Versioning Tools in Interactive Systems",
-                which developed a custom versioning tool designed to enhance the
-                efficiency of designers in building interactive systems,
-                leveraging knowledge gained from empirical research.
-              </li>
-            </ul>
+            <div class="employment-block">
+              <p class="role-meta">
+                <span class="role-date">March 2025 - Present</span>
+                <span class="role-divider">|</span>
+                <span class="role-company"
+                  >Siemens EDA (Siemens Digital Industries Software)</span
+                >
+                <span class="role-divider">|</span>
+                <em class="role-title">Software Developer</em>
+              </p>
+              <ul class="emp-list">
+                <li>
+                  Design and develop high-performance netlist parsers and
+                  internal representation data structures in modern C++ and
+                  Python, efficiently processing complex semiconductor circuit
+                  designs and industry-standard netlist formats.
+                </li>
+                <li>
+                  Optimize memory utilization and parsing throughput to scale
+                  seamlessly with massive multi-gigabyte integrated circuit (IC)
+                  designs across core EDA simulation and verification pipelines.
+                </li>
+              </ul>
+            </div>
+
+            <div class="employment-block">
+              <p class="role-meta">
+                <span class="role-date">October 2023 - March 2025</span>
+                <span class="role-divider">|</span>
+                <span class="role-company">Luxsonic Technologies Inc.</span>
+                <span class="role-divider">|</span>
+                <em class="role-title"
+                  >Head of Software &amp; Lead Software Developer</em
+                >
+              </p>
+              <ul class="emp-list">
+                <li>
+                  Team lead for the development of high-quality virtual reality
+                  applications for medical training and assessment targeting VR
+                  devices such as Meta and HTC headsets.
+                </li>
+                <li>
+                  Currently oversee the development of cutting edge radiology
+                  spatial application on VisionOS for Apple Vision Pro,
+                  combining SwiftUI and Metal programming expertise to deliver
+                  exceptional user experiences.
+                </li>
+                <li>
+                  Designed and developed AI based DICOM orchestrating platform
+                  that leverages machine learning models to improve clinical
+                  workflows and diagnostic accuracy.
+                </li>
+                <li>
+                  Led high-performing development team, driving talent growth
+                  and process improvement through mentorship and collaborative
+                  decision-making. This fostered a culture of innovation,
+                  resulting in exceptional product outcomes and customer
+                  satisfaction.
+                </li>
+              </ul>
+            </div>
+
+            <div class="employment-block">
+              <p class="role-meta">
+                <span class="role-date">February 2019 - September 2023</span>
+                <span class="role-divider">|</span>
+                <span class="role-company">Luxsonic Technologies Inc.</span>
+                <span class="role-divider">|</span>
+                <em class="role-title">Software Developer (Virtual Reality)</em>
+              </p>
+              <ul class="emp-list">
+                <li>
+                  Designed and developed virtual reality software applications
+                  in Unity with C# and ShaderLab to support medical training and
+                  assessment for a range of VR devices, including Oculus Rift,
+                  Oculus Rift S, Oculus Go, HTC VIVE Focus, HTC VIVE Focus 3, HP
+                  Reverb G2 and Varjo.
+                </li>
+                <li>
+                  Led the development of CaregiVR, a comprehensive full-stack
+                  virtual reality training and assessment platform that
+                  integrates seamlessly with web components using Reactjs and
+                  Graphql, leveraging AWS services for scalable infrastructure
+                  and real-time data processing.
+                </li>
+              </ul>
+            </div>
+
+            <div class="employment-block">
+              <p class="role-meta">
+                <span class="role-date">September 2016 - December 2021</span>
+                <span class="role-divider">|</span>
+                <span class="role-company">University of Saskatchewan</span>
+                <span class="role-divider">|</span>
+                <em class="role-title">Research Student (HCI Lab)</em>
+              </p>
+              <ul class="emp-list">
+                <li>
+                  Conducted human-computer interaction research projects and
+                  authored a thesis, "Versioning Tools in Interactive Systems",
+                  which developed a custom versioning tool designed to enhance
+                  the efficiency of designers in building interactive systems,
+                  leveraging knowledge gained from empirical research.
+                </li>
+              </ul>
+            </div>
           </section>
-          <section>
+
+          <section id="technical-skills">
             <h1>Technical Skills</h1>
             <ul class="skill-set">
               <li>VR/AR</li>
@@ -130,7 +194,8 @@
               <li>Shell Scripting</li>
             </ul>
           </section>
-          <section>
+
+          <section id="frameworks">
             <h1>Frameworks</h1>
             <ul class="skill-set">
               <li>Unity3D</li>
@@ -143,20 +208,47 @@
               <li>AWS Services</li>
             </ul>
           </section>
-          <section>
+
+          <section id="personal-interests">
             <h1>Personal Interests</h1>
             <ul class="skill-set">
               <li>Music Production</li>
               <li>Gaming</li>
             </ul>
           </section>
-          <!-- <section>
-            <div class="handmade">
-              <p>handmade by <em> Anthony Adamski</em></p>
-            </div>
-          </section> -->
         </div>
-      </div>
+      </main>
     </div>
+
+    <script>
+      (function () {
+        const themeToggleBtn = document.getElementById("theme-toggle");
+        const themeToggleIcon = document.getElementById("theme-toggle-icon");
+        const storedTheme = localStorage.getItem("theme");
+        const systemPrefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+
+        let currentTheme =
+          storedTheme || (systemPrefersDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", currentTheme);
+        updateIcon(currentTheme);
+
+        themeToggleBtn.addEventListener("click", function () {
+          currentTheme = currentTheme === "dark" ? "light" : "dark";
+          document.documentElement.setAttribute("data-theme", currentTheme);
+          localStorage.setItem("theme", currentTheme);
+          updateIcon(currentTheme);
+        });
+
+        function updateIcon(theme) {
+          if (theme === "dark") {
+            themeToggleIcon.className = "fas fa-sun";
+          } else {
+            themeToggleIcon.className = "fas fa-moon";
+          }
+        }
+      })();
+    </script>
   </body>
 </html>
